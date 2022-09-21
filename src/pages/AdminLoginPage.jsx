@@ -7,12 +7,9 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../authContext";
 import { GlobalContext, showToast } from "../globalContext";
 
-
-
 const AdminLoginPage = () => {
   const { dispatch } = React.useContext(AuthContext);
-const { dispatch : gDispatch } = React.useContext(GlobalContext);
-  
+  const { dispatch: gDispatch } = React.useContext(GlobalContext);
 
   const schema = yup
     .object({
@@ -33,22 +30,21 @@ const { dispatch : gDispatch } = React.useContext(GlobalContext);
 
   const onSubmit = async (data) => {
     let sdk = new MkdSDK();
-   try {
-    
-    //TODO
-    const newData = await sdk.login(data)
-    console.log(newData)
-     if(newData.error===false){
-      showToast(gDispatch, "Login Succesful");
-     }else{
-      showToast(gDispatch, newData.message);
-     }
-     
-   } catch (error) {
-    console.log(error);
-      
-   }
-     
+    try {
+      //TODO
+      const newData = await sdk.login(data);
+      console.log(newData);
+      if (newData.error === false) {
+        showToast(gDispatch, "Login Succesful");
+      } else {
+        showToast(gDispatch, newData.message);
+      }
+      setTimeout(() => {
+        navigate("/admin/dashboard");
+      }, 4000);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

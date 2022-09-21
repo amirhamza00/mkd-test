@@ -6,12 +6,14 @@ export default function MkdSDK() {
   this._custom = "";
   this._method = "POST";
 
+  
   const raw = this._project_id + ":" + this._secret;
   let base64Encode = btoa(raw);
 
   this.setTable = function (table) {
     this._table = table;
   };
+
 
   this.login = async function ({email, password, role}) {
     //TODO
