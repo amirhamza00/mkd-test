@@ -9,11 +9,21 @@ const Dashboard = () => {
         </div>
         <div className="date-filter">
             <ul>
-                <li>30 May 2022</li>
-                <li>.</li>
-                <li><button  className="submission-btn">Submissions OPEN</button></li>
-                <li>.</li>
-                <li>11:39</li>
+                <li className="date-text">30 May 2022</li>
+                <li className="dote">.</li>
+                <li><button className="submission-btn">Submissions OPEN</button></li>
+                <li className="dote">.</li>
+                <li className="date-text">11:39</li>
+            </ul>
+        </div>
+      </div>
+
+      <div className="video-cards">
+        <div>
+            <ul className="cards-title">
+                <li># Title</li>
+                <li>Author</li>
+                <li>Most Liked</li>
             </ul>
         </div>
       </div>

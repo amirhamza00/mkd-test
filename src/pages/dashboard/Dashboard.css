@@ -22,8 +22,45 @@
   background: #1d1d1d;
   border-radius: 16px;
 }
-.date-filter ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 7px;
+.date-filter ul {
+  display: flex;
+  align-items: center;
+}
+.date-filter ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 7px;
+}
+.submission-btn {
+  width: 156px;
+  height: 28px;
+  background: #9bff00;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+}
+.date-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #ffffff;
+}
+.dote{
+    font-size: 45px !important;
+    margin-top: -30px !important;
+    color: #696969;
+}
+.video-cards{
+    padding: 40px 60px;
+    background-color: #000;
+    color: #666666;
+}
+.cards-title{
+    display: grid;
+    grid-template-columns: 600px 550px 400px;
 }
