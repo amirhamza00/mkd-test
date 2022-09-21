@@ -1,0 +1,29 @@
+.upper-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 60px;
+  background-color: black;
+}
+.title h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100 !important;
+  color: #fff;
+  text-transform: capitalize;
+}
+.date-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 408px;
+  height: 56px;
+  background: #1d1d1d;
+  border-radius: 16px;
+}
+.date-filter ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 7px;
+}

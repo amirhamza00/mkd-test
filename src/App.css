@@ -3,16 +3,13 @@
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box;
-  color: black !important;
-}
-.px-5 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  background-color:  black !important;
 }
 
-
-.py-10 {
-  padding-top: 0 !important; 
-   padding-bottom: 0 !important;
+.date-filter {
+  width: 418px;
+  height: 56px;
+  background: #1d1d1d;
+  border-radius: 16px;
 }
 
