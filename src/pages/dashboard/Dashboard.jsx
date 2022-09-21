@@ -2,6 +2,8 @@ import React from "react";
 import VideoCard from "../../components/videoCard/VideoCard";
 import './Dashboard.css'
 const Dashboard = () => {
+
+
   return (
     <div>
       <div className="upper-section">
@@ -27,7 +29,9 @@ const Dashboard = () => {
                 <li>Most Liked</li>
             </ul>
         </div>
-        <VideoCard/>
+        {/* data.map((item)=> <videoCard item={item}/>) */}
+        <VideoCard/> <VideoCard/> <VideoCard/>
+        
       </div>
     </div>
   );

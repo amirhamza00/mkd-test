@@ -4,7 +4,7 @@
   border-radius: 5px;
   border: 1px solid #8a8989;
   display: grid;
-  grid-template-columns: 80px 600px 480px 100px;
+  grid-template-columns: 80px 600px 460px 100px;
   align-items: center;
 }
 .video-card-content {
