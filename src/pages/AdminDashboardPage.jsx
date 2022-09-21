@@ -1,12 +1,12 @@
 import React from "react";
+import Header from "./Header/Header";
 
 const AdminDashboardPage = () => {
   return (
-    <>
-      <div className="w-full flex justify-center items-center text-7xl h-screen text-gray-700 ">
-        Dashboard
-      </div>
-    </>
+    <section className="dashboard-section">
+    <Header/>
+    
+    </section>
   );
 };
 
