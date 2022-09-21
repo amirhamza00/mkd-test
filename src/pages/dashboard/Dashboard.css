@@ -62,5 +62,5 @@
 }
 .cards-title{
     display: grid;
-    grid-template-columns: 600px 550px 400px;
+    grid-template-columns: 700px 450px 100px;
 }

@@ -1,0 +1,26 @@
+.video-card {
+  margin-top: 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #8a8989;
+  display: grid;
+  grid-template-columns: 80px 600px 480px 100px;
+  align-items: center;
+}
+.video-card-content {
+  display: flex;
+}
+.video-card-content h4 {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 70%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  color: #ffffff;
+}
+.like-count{
+    display: flex;
+    align-items: center;
+}

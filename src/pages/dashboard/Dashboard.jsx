@@ -1,4 +1,5 @@
 import React from "react";
+import VideoCard from "../../components/videoCard/VideoCard";
 import './Dashboard.css'
 const Dashboard = () => {
   return (
@@ -26,6 +27,7 @@ const Dashboard = () => {
                 <li>Most Liked</li>
             </ul>
         </div>
+        <VideoCard/>
       </div>
     </div>
   );
