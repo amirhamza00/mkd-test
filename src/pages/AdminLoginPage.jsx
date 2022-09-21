@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -7,9 +8,12 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../authContext";
 import { GlobalContext, showToast } from "../globalContext";
 
+
 const AdminLoginPage = () => {
   const { dispatch } = React.useContext(AuthContext);
   const { dispatch: gDispatch } = React.useContext(GlobalContext);
+  const navigate = useNavigate();
+
 
   const schema = yup
     .object({
@@ -18,7 +22,7 @@ const AdminLoginPage = () => {
     })
     .required();
 
-  const navigate = useNavigate();
+  
   const {
     register,
     handleSubmit,
@@ -27,6 +31,8 @@ const AdminLoginPage = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
+
+  
 
   const onSubmit = async (data) => {
     let sdk = new MkdSDK();
@@ -41,11 +47,24 @@ const AdminLoginPage = () => {
       }
       setTimeout(() => {
         navigate("/admin/dashboard");
-      }, 4000);
+      }, 3000);
     } catch (error) {
       console.log(error);
     }
   };
+
+
+  
+  const reDirect = () => {
+    const token = localStorage.getItem("token")
+    if (token) {
+      navigate("/admin/dashboard")
+  }}
+
+  useEffect(()=>{
+    reDirect();
+  },[]);
+  
 
   return (
     <div className="w-full max-w-xs mx-auto">
